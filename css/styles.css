@@ -1,0 +1,185 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 1px);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    background-color: hsl(217, 54%, 11%);
+
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card{
+
+    height: 570px;
+    width: 330px;
+    padding: 20px;
+
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 10px 20px rgba(0, 0, 0, .1);
+            box-shadow: 3px 3px 10px 20px rgba(0, 0, 0, .1);
+
+}
+
+
+
+header img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.card h1{
+
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.flex-parent{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+
+.flex-parent div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.flex-parent p{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.flex-parent img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.bolder-text{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+footer{
+
+    padding-top: 10px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+
+    border-top: 2px solid hsl(215, 32%, 27%);
+}
+
+footer img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+footer span{
+    color: white;
+}
+
+
+/* Active State */
+/* Hover */
+
+header{
+    position: relative;
+}
+
+footer span:hover,
+h1:hover,
+header:hover {
+    cursor: pointer;
+}
+
+header:hover .img-overly{
+    display: block;
+}
+
+.img-overly{
+    position: absolute;
+    display: none;
+
+    left: 0;
+    top: 0;
+    width: 290px;
+    height: 290px;
+
+    background-color: hsla(178, 100%, 50%,.5);
+    border-radius: 10px;
+
+
+}
+
+.img-overly img{
+    position:absolute;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+
+h1:hover,
+footer span:hover{
+    color: hsl(178, 100%, 50%);
+}
